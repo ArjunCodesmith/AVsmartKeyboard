@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="6dp" android:background="@color/bg_dark">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btn_settings" android:layout_width="0dp" android:layout_weight="1" android:text="Settings"/>
+        <Button android:id="@+id/btn_autotype" android:layout_width="0dp" android:layout_weight="1" android:text="Auto Type"/>
+        <Button android:id="@+id/btn_clipboard" android:layout_width="0dp" android:layout_weight="1" android:text="Clipboard"/>
+        <Button android:id="@+id/btn_paste" android:layout_width="0dp" android:layout_weight="1" android:text="Paste"/>
+    </LinearLayout>
+
+    <!-- simplified QWERTY row -->
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/key_q" android:layout_width="0dp" android:layout_weight="1" android:text="Q"/>
+        <Button android:id="@+id/key_w" android:layout_width="0dp" android:layout_weight="1" android:text="W"/>
+        <Button android:id="@+id/key_e" android:layout_width="0dp" android:layout_weight="1" android:text="E"/>
+        <Button android:id="@+id/key_r" android:layout_width="0dp" android:layout_weight="1" android:text="R"/>
+        <Button android:id="@+id/key_t" android:layout_width="0dp" android:layout_weight="1" android:text="T"/>
+        <Button android:id="@+id/key_y" android:layout_width="0dp" android:layout_weight="1" android:text="Y"/>
+        <Button android:id="@+id/key_u" android:layout_width="0dp" android:layout_weight="1" android:text="U"/>
+        <Button android:id="@+id/key_i" android:layout_width="0dp" android:layout_weight="1" android:text="I"/>
+        <Button android:id="@+id/key_o" android:layout_width="0dp" android:layout_weight="1" android:text="O"/>
+        <Button android:id="@+id/key_p" android:layout_width="0dp" android:layout_weight="1" android:text="P"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -22,4 +22,3 @@
         <activity android:name=".ui.wordlist.WordListEditorActivity" android:exported="true"/>
     </application>
 </manifest>
-
