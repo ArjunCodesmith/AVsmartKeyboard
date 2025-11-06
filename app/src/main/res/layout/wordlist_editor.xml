@@ -1,5 +1,0 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
-    <EditText android:id="@+id/et_word_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter word"/>
-    <Button android:id="@+id/btn_add_word" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add" android:layout_marginTop="8dp"/>
-    <LinearLayout android:id="@+id/list_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp"/>
-</LinearLayout>
