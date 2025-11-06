@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.AVSmart" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AVsmart" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1EB980</item>
+        <item name="colorPrimaryVariant">#166A50</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
 </resources>

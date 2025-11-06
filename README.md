@@ -1,17 +1,19 @@
-# AVsmart Keyboard
+# AVsmart Keyboard - GitHub Actions + Termux ready
 
-This is a GitHub-ready Android project for **AVsmart Keyboard** (Kotlin).
-Push this repository to GitHub and the included workflow will build a debug APK automatically.
+Features:
+- IME keyboard with QWERTY layout
+- Top buttons: Settings, Auto Type, Clipboard, Paste
+- Editable wordlist in Settings (used by Auto Type)
+- Delay per word (default 500ms), choose space or enter after each word
+- Clipboard history (last 5 items, auto-clear after 2 minutes)
+- Dark material theme
 
-## How to use
-1. Unzip / clone this repo.
-2. `git init` / push to GitHub.
-3. GitHub Actions will run and upload APK as artifact.
+Build locally (Termux):
+1. Install JDK 17 and Android SDK.
+2. From project root run:
+   ```bash
+   gradle wrapper --gradle-version 7.6.6
+   ./gradlew assembleDebug
+   ```
 
-## Keystore (debug)
-This repo includes `scripts/generate_debug_keystore.sh` which creates a debug keystore locally:
-```
-chmod +x scripts/generate_debug_keystore.sh
-./scripts/generate_debug_keystore.sh
-```
-You can then sign the APK locally or configure GitHub Actions to use it via secrets.
+GitHub Actions: push to main to trigger `.github/workflows/android.yml` which builds APK and uploads artifact.

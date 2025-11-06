@@ -1,4 +1,1 @@
-<resources>
-    <color name="bg_dark">#121212</color>
-    <color name="text_primary">#FFFFFF</color>
-</resources>
+<resources><color name="bg_dark">#121212</color><color name="key_dark">#1E1E1E</color><color name="text_primary">#FFFFFF</color></resources>
