@@ -11,21 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
       - name: Checkout repository
-=======
-      - name: Checkout code
->>>>>>> 25b192ce05eba855273f543ef7041d0d52022830
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
-<<<<<<< HEAD
-=======
           distribution: 'temurin'
->>>>>>> 25b192ce05eba855273f543ef7041d0d52022830
+          java-version: '17'
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
@@ -33,7 +26,6 @@ jobs:
       - name: Accept Android SDK Licenses
         run: yes | sdkmanager --licenses || true
 
-<<<<<<< HEAD
       - name: Build debug APK
         run: ./gradlew :app:assembleDebug
 
@@ -41,17 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AVsmartKeyboard-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
-=======
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Build Debug APK
-        run: ./gradlew :AVsmartKeyboard:assembleDebug
-
-      - name: Upload Debug APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: AVsmartKeyboard-debug
-          path: app/build/outputs/apk/debug/AVsmartKeyboard-debug.apk
->>>>>>> 25b192ce05eba855273f543ef7041d0d52022830
+          path: app/build/outputs/apk/debug/AVsmartkeyboard-debug.apk
