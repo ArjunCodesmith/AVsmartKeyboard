@@ -1,20 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp">
-
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dark Theme" />
-        <Switch android:id="@+id/switch_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
-
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Auto Type" android:layout_marginTop="8dp"/>
-        <Switch android:id="@+id/switch_autotype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
-
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delay per word (ms)" android:layout_marginTop="8dp"/>
-        <EditText android:id="@+id/et_delay_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:hint="e.g., 500"/>
-
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="After each word" android:layout_marginTop="8dp"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Theme"/>
+        <Switch android:id="@+id/switch_theme" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Auto Type"/>
+        <Switch android:id="@+id/switch_autotype" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delay per word (ms)"/>
+        <EditText android:id="@+id/et_delay_setting" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="After each word"/>
         <Spinner android:id="@+id/sp_after" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-
         <Button android:id="@+id/btn_wordlist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Edit Word List" android:layout_marginTop="12dp"/>
     </LinearLayout>
 </ScrollView>

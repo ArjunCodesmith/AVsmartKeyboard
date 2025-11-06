@@ -14,25 +14,13 @@ android {
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            minifyEnabled false
-        }
+        release { minifyEnabled false }
+        debug { minifyEnabled false }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
-
-    packagingOptions {
-        jniLibs.useLegacyPackaging = true
-        resources.excludes += [ "META-INF/*" ]
-    }
+    packagingOptions { jniLibs.useLegacyPackaging = true; resources.excludes += ["META-INF/*"] }
 }
 
 dependencies {
