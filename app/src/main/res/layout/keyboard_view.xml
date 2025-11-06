@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/keyboard_root" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/bg_dark" android:padding="6dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <Button android:id="@+id/btn_settings" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Settings" />
+        <Button android:id="@+id/btn_autotype" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Auto Type" />
+        <Button android:id="@+id/btn_clipboard" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Clipboard" />
+        <Button android:id="@+id/btn_paste" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Paste" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/key_q" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Q"/>
+            <Button android:id="@+id/key_w" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="W"/>
+            <Button android:id="@+id/key_e" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="E"/>
+            <Button android:id="@+id/key_r" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="R"/>
+            <Button android:id="@+id/key_t" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="T"/>
+            <Button android:id="@+id/key_y" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Y"/>
+            <Button android:id="@+id/key_u" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="U"/>
+            <Button android:id="@+id/key_i" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="I"/>
+            <Button android:id="@+id/key_o" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="O"/>
+            <Button android:id="@+id/key_p" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="P"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

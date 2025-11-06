@@ -1,0 +1,11 @@
+<manifest package="com.av.smartkeyboard" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="34" />
+    <application android:allowBackup="true" android:label="AVsmart Keyboard" android:icon="@mipmap/ic_launcher" android:theme="@style/Theme.AVsmart">
+        <service android:name=".ime.AVSmartIME" android:label="AVsmart Keyboard" android:permission="android.permission.BIND_INPUT_METHOD" android:exported="true">
+            <intent-filter><action android:name="android.view.InputMethod" /></intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <activity android:name=".ui.SettingsActivity" android:exported="true" android:label="Settings"/>
+        <activity android:name=".ui.wordlist.WordListEditorActivity" android:exported="true" android:label="Word List" />
+    </application>
+</manifest>
